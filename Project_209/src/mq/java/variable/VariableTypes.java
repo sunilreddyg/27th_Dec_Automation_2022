@@ -1,5 +1,4 @@
 package mq.java.variable;
-
 public class VariableTypes 
 {
 	//Global variable instant type

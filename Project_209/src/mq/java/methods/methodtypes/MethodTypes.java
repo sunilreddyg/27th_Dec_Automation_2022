@@ -1,6 +1,5 @@
 package mq.java.methods.methodtypes;
 
-import io.netty.handler.ssl.SslContextOption;
 
 public class MethodTypes 
 {

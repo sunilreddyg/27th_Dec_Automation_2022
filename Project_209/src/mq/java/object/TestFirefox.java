@@ -26,6 +26,12 @@ public class TestFirefox
 		new TestFirefox().maximize();
 		
 		
+		
+		/*
+		 * Object Creation syntax:-->
+		 * 	Classname obj=new Classname();
+		 *  obj.methodname();
+		 */
 		TestFirefox obj=new TestFirefox();
 		obj.minimize();
 		obj.maximize();
