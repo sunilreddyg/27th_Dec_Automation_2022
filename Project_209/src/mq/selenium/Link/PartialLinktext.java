@@ -14,7 +14,7 @@ public class PartialLinktext
 		driver.get("http://instagram.com");
 		driver.manage().window().maximize();
 		
-		
+		//IDentifying link with partial link name...
 		driver.findElement(By.partialLinkText("Non-Users")).click();
 		
 		
