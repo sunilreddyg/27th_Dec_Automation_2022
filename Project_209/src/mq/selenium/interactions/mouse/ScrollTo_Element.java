@@ -8,29 +8,23 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-public class Moveto_OffSet {
+public class ScrollTo_Element {
 
 	public static void main(String[] args) throws Exception {
 		
-		
 		WebDriver driver=new ChromeDriver();
-		driver.get("https://marcojakob.github.io/dart-dnd/basic/");
+		driver.get("https://www.naukri.com");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		
-	
-		WebElement TrashBin=driver.findElement(By.xpath("//div[@class='trash']"));
+		//Scroll Page to Required location
+		WebElement All=driver.findElement(By.xpath("//span[@filter-id='-1']"));
+		new Actions(driver).scrollToElement(All).perform();
 		
-		
-		new Actions(driver).moveByOffset(36, 231).clickAndHold()
-		.moveToElement(TrashBin).release().perform();
+		//Scroll Down and Scroll page using x and y delta values..
 		Thread.sleep(2000);
-		
-		
-		new Actions(driver).moveByOffset(36, 231).clickAndHold()
-		.moveToElement(TrashBin).release().perform();
-		
-		
+		new Actions(driver).scrollByAmount(0, 200).perform();
+
 	}
 
 }
