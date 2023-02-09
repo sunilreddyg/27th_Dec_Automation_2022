@@ -29,12 +29,11 @@ public class JavaScript_Send_CharactersTo_Editbox
 		.sendKeys("Sunil").perform();
 		
 		
-		
 		//Type text into password field using javascript executor
 		((JavascriptExecutor)driver)
 		.executeScript("document.getElementById('pass').value='Hello@123'");
 		
-		
+		//Click method using javascript executor [With Xpath identifier]
 		WebElement LoginButton=driver.findElement(By.xpath("//button[@data-testid='royal_login_button']"));
 		((JavascriptExecutor)driver)
 		.executeScript("arguments[0].click()", LoginButton);
