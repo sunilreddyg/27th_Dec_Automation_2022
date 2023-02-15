@@ -18,7 +18,7 @@ public class Alert_With_OK_button {
 	    
 	    //This action open alert at webbrowser
 	    WebElement Alert_prompt_link=driver.findElement(By.xpath("//button[@class='btn btn-danger']"));
-	    //Alert_prompt_link.click();
+	    Alert_prompt_link.click();
 	    Thread.sleep(3000);
 	    
 	    

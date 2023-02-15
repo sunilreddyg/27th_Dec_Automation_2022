@@ -7,7 +7,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class AlertHandling_With_TryCatch {
 
-	public static void main(String[] args) throws Exception {
+	public static void main(String[] args) throws Exception 
+	{
 		
 		WebDriver driver=new ChromeDriver();     //Launching browser method
 		driver.get("http://demo.automationtesting.in/Alerts.html");
@@ -15,7 +16,7 @@ public class AlertHandling_With_TryCatch {
 	    
 	    
 	    WebElement Alert_prompt_link=driver.findElement(By.xpath("//button[@class='btn btn-danger']"));
-	    //Alert_prompt_link.click();
+	    Alert_prompt_link.click();
 	    Thread.sleep(3000);
 	    
 	   
@@ -24,6 +25,8 @@ public class AlertHandling_With_TryCatch {
 			System.out.println("Alert presented");
 		} catch (Exception e) {
 			e.printStackTrace();
+		}finally {
+			driver.close();
 		}
 	    
 	    

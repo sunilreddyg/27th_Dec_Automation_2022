@@ -7,11 +7,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class SwitchTo_SecondWindow 
-{
+public class SwitchTo_Window_Using_PageTitle {
 
-	public static void main(String[] args) throws Exception 
-	{
+	public static void main(String[] args) throws Exception {
 		
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://www.instagram.com/");
@@ -32,7 +30,11 @@ public class SwitchTo_SecondWindow
 	    Set<String> AllwindowIds=driver.getWindowHandles();
 	    for (String Eachwindow : AllwindowIds) 
 	    {
-	    	driver.switchTo().window(Eachwindow);
+	    	String PageTitle=driver.switchTo().window(Eachwindow).getTitle();
+	    	if(PageTitle.contains("Meta"))
+	    	{
+	    		break;
+	    	}
 		}
 		
 	    //The assumption is once iteration finished by default control will be available at Second window
@@ -45,6 +47,7 @@ public class SwitchTo_SecondWindow
 	    //Switch back to Mainwindow
 	    driver.switchTo().window(MainwindowID);
 	    System.out.println("Main window title is --->"+driver.getTitle());
+
 	}
 
 }
