@@ -20,6 +20,9 @@ public class Global_initiatioOf_Variable
 			 x=300;
 		 }
 		 System.out.println(x);
+		 
+		 
+		 
 		
 
 	}
