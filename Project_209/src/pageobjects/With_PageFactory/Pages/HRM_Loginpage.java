@@ -40,11 +40,23 @@ public class HRM_Loginpage
 		}
 		
 		
+		public void staticTime(long MS)
+		{
+			try {
+				Thread.sleep(MS);
+			} catch (Exception e) {
+				// TODO: handle exception
+			}
+		}
+		
+		
+		
 		//Method to Login into account
 		String UID="Admin";
 		String PWD="admin123";
 		public void Userlogin()
 		{
+			staticTime(3000);
 			username.sendKeys(UID);
 			password.sendKeys(PWD);
 			login.click();

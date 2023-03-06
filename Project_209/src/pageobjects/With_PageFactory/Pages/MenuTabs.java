@@ -45,6 +45,9 @@ public class MenuTabs
 	@FindBy(xpath = "//span[contains(.,'Buzz')]")
 	public WebElement  buzz;
 	
+	@FindBy(xpath = "//span[@class='oxd-text oxd-text--span oxd-main-menu-item--name'][contains(.,'Leave')]")
+	public WebElement Leave;
+	
 	public void clickAdminTab()
 	{
 		admin.click();

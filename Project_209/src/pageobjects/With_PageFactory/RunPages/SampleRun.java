@@ -2,9 +2,8 @@ package pageobjects.With_PageFactory.RunPages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
-import pageobjects.With_PageFactory.Pages.HRM_Loginpage;
-import pageobjects.With_PageFactory.Pages.MenuTabs;
+import pageobjects.With_PageFactory.Testcases.LeaveTest;
+import pageobjects.With_PageFactory.Testcases.TestCase1;
 
 public class SampleRun {
 
@@ -15,14 +14,13 @@ public class SampleRun {
 		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 		driver.manage().window().maximize();
 		
-		HRM_Loginpage login=new HRM_Loginpage(driver);
-		login.Userlogin();
 		
-		MenuTabs tabs=new MenuTabs(driver);
-		tabs.clickAdminTab();
+		/*TestCase1 tc=new TestCase1(driver);
+		tc.Add_Valid_EmployeeDetails();*/
 		
 		
-		
+		LeaveTest test=new LeaveTest(driver);
+		test.ApplyLeaveonvalidDate();
 		
 	}
 
