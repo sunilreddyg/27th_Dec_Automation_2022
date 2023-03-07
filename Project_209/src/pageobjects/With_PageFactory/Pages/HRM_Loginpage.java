@@ -52,8 +52,8 @@ public class HRM_Loginpage
 		
 		
 		//Method to Login into account
-		String UID="Admin";
-		String PWD="admin123";
+		public String UID="Admin";
+		public String PWD="admin123";
 		public void Userlogin()
 		{
 			staticTime(3000);
