@@ -56,10 +56,8 @@ public class WebDriver_Test1
   @AfterClass
   public void afterClass() throws Exception 
   {
-	
 		Thread.sleep(5000);
 		driver.close();
-	
   }
 
 }

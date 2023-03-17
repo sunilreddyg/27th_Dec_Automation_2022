@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="GroupTest">
+
+	<groups>
+		<run>
+			<include name="Reg2"/>
+		</run>
+	</groups>
+
+
+	<test name="DefaulTTest">
+		<classes>
+			<class name="framework.testng.Groups.TestSuite1"/>
+			<class name="framework.testng.Groups.TestSuite2"/>
+			<class name="framework.testng.Groups.TestSuite3"/>
+		</classes>
+	</test>
+</suite>

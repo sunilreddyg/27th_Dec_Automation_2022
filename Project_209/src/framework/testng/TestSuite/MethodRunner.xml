@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Default2">
+	<test name="TestWithChrome" verbose="2">
+		<classes>
+			<class name="framework.testng.TestSuite.Class1">
+				<methods>
+					<include name="Userlogin"/>
+					<include name="tc003"/>
+				</methods>
+			</class>
+			
+			<class name="framework.testng.TestSuite.Class3">
+				<methods>
+					<exclude name="tc009"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
