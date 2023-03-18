@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Parameters">
+
+	<parameter name="browsername" value="firefox"/>
+	<parameter name="url" value="http://facebook.com"/>
+	<parameter name="uid" value="darshan"/>
+	<parameter name="pwd" value="Qa@123"/>
+
+	<test name="test1">
+		<classes>
+			<class name="framework.testng.Suite_Parameter.Get_Parameters_From_Suite"/>
+		</classes>
+	</test>
+</suite>
