@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Test3">
+
+	<listeners>
+		<listener class-name="framework.testng.Listeners.Run_Listeners"/>
+		<listener class-name="framework.testng.Listeners.CreateCustomReport"/>
+	</listeners>
+
+	<test name="TestF">
+		<classes>
+			<class name="framework.testng.Listeners.MyTest"/>
+		</classes>
+	</test>
+</suite>

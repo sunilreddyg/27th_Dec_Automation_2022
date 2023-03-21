@@ -25,7 +25,7 @@ public class InputData
   }
   
   
-  @DataProvider
+  @DataProvider(parallel=true)
   public Object[][] data() 
   {
     return new Object[][] 
