@@ -120,10 +120,10 @@ public class Common_Reusable_Actions
 	 
 	 
 	 /*
-		 * KeyWord:--> This keyword type text into editbox
-		 * Author:--> SunilReddy
-		 * Parameters Used:-->  Local Parameter
-		 */
+	 * KeyWord:--> This keyword type text into editbox
+	 * Author:--> SunilReddy
+	 * Parameters Used:-->  Local Parameter
+	 */
 	 public void Type_text(String xpath, String input)
 	 {
 		try {
@@ -134,6 +134,21 @@ public class Common_Reusable_Actions
 			e.printStackTrace();
 		}
 	 }
+	 
+	 
+	 /*
+		 * KeyWord:--> This keyword type text into editbox
+		 * Author:--> SunilReddy
+		 * Parameters Used:-->  Local Parameter
+		 */
+		 public void Type_text(By loc, String input)
+		 {
+			try {
+				driver.findElement(loc).sendKeys(input);
+			} catch (Exception e) {
+				// TODO: handle exception
+			}
+		 }
 	 
 	 /*
 		 * KeyWord:--> This keyword type text into editbox
