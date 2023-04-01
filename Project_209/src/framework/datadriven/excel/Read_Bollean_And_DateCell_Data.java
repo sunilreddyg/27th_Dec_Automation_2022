@@ -4,7 +4,6 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -31,7 +30,6 @@ public class Read_Bollean_And_DateCell_Data {
 	    //Convert primitive value to non primitive and Convert into Text
 	    String flag1=new Boolean(flag).toString();
 	    System.out.println("boolean value into string is --> "+flag1);
-	    
 	    
 	    
 	    //Read date cell value from excel
