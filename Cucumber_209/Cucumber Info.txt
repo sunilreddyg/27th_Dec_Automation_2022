@@ -1,0 +1,52 @@
+Cucumber:--->
+	BDD framework[Behaviour driven development]
+	FDD framework[Feature driven development]
+
+	What is Cucumber ?
+
+		Cucumber is a testing approach which 
+		supports Behavior Driven Development (BDD).
+
+		Cucumber Implement in agile projects..
+
+	Test Driven Development (TDD):-->
+		 is a software development practice that focuses 
+		 on creating unit test cases before developing 
+		the actual code..
+
+
+	UseStory:-->
+		A small narration What exactly client wants
+
+		As a ------  [who want's to accomplish]
+		I want ----- [What they want to accomplish]
+		So that ---- [Why they want to accomplish]
+
+	Gherkin Keywords:-->
+		
+		Given   [PreConditions Steps]
+		When	[Actual Steps]
+		Then	[Final Response]
+
+
+	Installion Natual Plugin in eclipse:-->
+		
+
+		In Eclipse, in "Help" >> "Install New Software..."
+		Enter below url and follow installation steps
+		https://rlogiacco.github.io/Natural
+
+
+	Download cucumber jar files:-->
+
+		https://jar-download.com/?search_box=cucumber-java
+		cucumber-java from group io.cucumber (version 7.11.2)
+
+
+
+
+
+
+
+
+
