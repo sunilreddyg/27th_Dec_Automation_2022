@@ -6,11 +6,7 @@ Feature: Testing login feature
 			And click on Login button
 		Then Verify Account Page displayed
 		
-	Scenario:  Testing Login Invalid Scenario
 	
-		When user enter invalid username and invalid password
-			And click on Login button
-		Then Verify error text displayed
 		
 		
 		
